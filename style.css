@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  font-family: Montserrat;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #000000;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 8em;
+}
+.main-content{
+    background-color: grey;
+    padding: 1em;
+    border-radius: 10%;
+}
+#button-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fav-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fav-list {
+  width: 15em;
+  height: 10em;
+  line-height: 2em;
+  padding: 0;
+  margin: 0;
+  overflow:auto;
+  overflow-y: visible;
+  background-color: #FFF8E5;
+}
+ul {
+  list-style-type: none;
+}
+#liste {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  width: 100px;
+  padding: 5px;
+}
+button {
+  width: 10em;
+}
+span{
+  color: white;
+}
+#fav-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#fav-list::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+#fav-list::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
